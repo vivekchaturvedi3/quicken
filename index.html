@@ -1,31 +1,56 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Employee Directory</title>
+<title>Welcome to Quicken</title>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
-<link rel="stylesheet" href="css/styles.css" />
-</head>
-    
-<body>
-        
-<div id="employeeListPage" data-role="page" >
-
-	<div data-role="header" data-position="fixed">
-		<h1>Employee Directory</h1>
-	</div>
-
-	<div data-role="content">
-         <ul id="employeeList" data-role="listview" data-filter="true"></ul>
-    </div>		
-
-</div>
 
 <script src="js/jquery.js"></script>
 <script src="js/jquery.mobile-1.0rc1.min.js"></script>
-<script src="js/employeelist.js"></script>
-<script src="js/employeedetails.js"></script>
-<script src="js/reportlist.js"></script>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jqm-demos.css">
+</head>
+    
+<body class="mainbg">
+
+<div data-role="page" id="home" class="jqm-demos jqm-home">
+  <div data-role="header" class="jqm-header">
+    <h1>Welcome to Quicken </h1>
+    <span>&nbsp;</span>
+    <h2><a href="#"><img src="img/logo.png" alt=""></a></h2>
+  </div>
+  <!-- /header -->
+  
+  <div role="main" class="ui-content jqm-content formcontent">
+  		<div class="iconblock">
+        	<a href="event.html" class="eventsblock" rel="external" ><img src="img/eventimg.png"></a>
+            <a href="#movieListPage" class="movieblock"><img src="img/movieicon.png"></a>
+            <a href="#restListPage" class="resturantblock"><img src="img/resturanticon.png"></a>
+            <a href="#cakeListPage" class="cakeiconblock"><img src="img/cakeicon.png"></a>
+            <a href="#ffListPage" class="fastfoodiconblock"><img src="img/fastfoodicon.png"></a>
+            
+            <div class="clear"></div>
+        </div>
+  
+     <form>
+	<a href="signup.html" class="ui-btn button_form">Sign up</a>
+     
+    </form>
+  </div>
+  <!-- /content --> 
+</div>
+
+        
+<div id="eventListPage1" data-role="page" class="jqm-demos jqm-home" data-add-back-btn="true">
+  <div data-role="header" class="jqm-header" data-position="fixed">
+  <h1 class="termstitle">Event &amp; Parties</h1>
+	</div>
+
+	<div data-role="content">
+         <ul id="eventList" data-role="listview" data-filter="true"></ul>
+    </div>		
+
+</div>
 
 </body>
 

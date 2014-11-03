@@ -1,0 +1,59 @@
+*{margin:0 !important; padding:0 !important;}
+
+body{background:#323542 !important; font-family:Arial, Helvetica, sans-serif !important;}
+.formcontent{color:#fff !important; }
+
+.ui-content form input[type=text]{background:url(../img/usericon.png) no-repeat scroll 10px 9px / 9% auto #474a55 !important; width: 80% !important; padding:17px 0 12px 50px !important; color:#797b81 !important; font-size:15px !important; border:none !important; border-radius:4px !important; -webkit-border-radius:4px !important; -khtml-border-radius:4px !important; margin-bottom:10px !important;  font-family:Arial, Helvetica, sans-serif !important;}
+
+.ui-content form input[type=email]{background:url(../img/emailicon.png) no-repeat scroll 10px 14px / 11% auto #474a55 !important; width: 80% !important; padding:17px 0 12px 50px !important; color:#797b81 !important; font-size:15px !important; border:none !important; border-radius:4px !important; -webkit-border-radius:4px !important; -khtml-border-radius:4px !important; margin-bottom:10px !important;  font-family:Arial, Helvetica, sans-serif !important;}
+.ui-content form input[type=password]{background:url(../img/lockicon.png) no-repeat scroll 10px 9px / 10% auto #474a55 !important; width: 80% !important; padding:17px 0 12px 50px !important; color:#797b81 !important; font-size:15px !important; border:none !important; border-radius:4px !important; -webkit-border-radius:4px !important; -khtml-border-radius:4px !important; margin-bottom:10px !important; font-family:Arial, Helvetica, sans-serif !important; }
+
+
+
+.agreetxt{clear:both !important; padding:15px 0 !important; font-size:14px !important; color:#6d6f76 !important;}
+
+.agreetxt input[type=checkbox]{float: left !important;    margin: 2px 5px 0 0 !important;}
+
+/*.formcontent button[type=submit],.eventdetail button[type=submit]{ width: 97% !important; text-align:center !important; padding:17px 0 !important; color:#fff !important; font-size:15px !important; border:none !important; border-radius:4px !important; -webkit-border-radius:4px !important; -khtml-border-radius:4px !important; margin-top:5px !important;  font-family:Arial, Helvetica, sans-serif !important; cursor:pointer !important; background:#0bd38a !important;}*/
+form a.button_form{ width: 78% !important; text-align:center !important; padding:17px 0 !important; color:#fff !important; font-size:15px !important; border:none !important; border-radius:4px !important; -webkit-border-radius:4px !important; -khtml-border-radius:4px !important; margin:5px 0 0 29px !important;  font-family:Arial, Helvetica, sans-serif !important; cursor:pointer !important; background:#0bd38a !important;}
+
+.forgotlink{clear:both !important; padding:15px 0 !important; font-size:14px !important; color:#6d6f76 !important;}
+.forgotlink a{color:#6d6f76 !important;text-decoration:none !important;}
+.sinuplink{float:right !important; text-decoration:underline !important;}
+.copyrighttxt{ font-size:12px !important; clear:both !important; color:#fff !important; padding:70px 0 0 0 !important; text-align:center !important;}
+
+.iconblock{clear:both !important; padding-bottom:10px !important; clear:both !important;}
+.iconblock img {border: 1px solid #fff !important; border-radius: 5px !important; float: left !important;margin-right: 10px !important;  margin-top: 10px !important;  text-align: center !important; width: 28% !important; margin-bottom:20px !important;}
+.clear{clear:both !important;}
+.cakeiconblock img{margin-left:50px}
+
+.mainbg{background:url(../img/mainimg.png) repeat !important; background-size:cover !important;}
+
+.termstitle{text-align:left !important; border-bottom:1px solid #fff !important; padding:10px !important; margin:15px auto !important;  width:85% !important; }
+.formcontent p{font-size:12px !important; line-height:18px !important; padding-bottom:20px !important;}
+
+.eventblock{padding:10px !important;/* width: 22%  !important;*/ margin: auto !important; color:#fff !important; float:none !important; }
+.eventblock ul{clear:both !important; list-style:none !important; padding:10px 0 0 0 !important;}
+.eventblock li{background: none repeat scroll 0 0 rgba(0, 0, 0, 0.21) !important;    border-bottom: 1px solid #fff !important;    float: left !important;
+    padding: 10px 3% !important;    width: 96% !important;}
+.eventblock img{float:left !important;   /*width: 50% !important;*/}
+.eventblock h2{font-size:14px !important; padding:0px 0 0 0 !important; color: #797b81 !important;text-decoration: none !important;}
+.eventblock h2 a{color: #797b81 !important; font-weight:bold !important;text-decoration: none !important;}
+.eventblock h3{ font-size:12px !important; padding:5px 0 0 0 !important;color: #FFFFFF !important;text-decoration: none !important;}
+.eventrightcontent{float:right !important; width:46% !important; color: #FFFFFF !important;text-decoration: none !important;}
+
+.sorting{background:url(../img/shortingicon.png) no-repeat !important; color: #fff !important; padding:0 0 0 20px !important; font-size:12px !important;}
+.searchbar{background:rgba(0, 0, 0, 0.5) !important; width:60% !important; padding:10px !important; border-radius:5px !important; float:left !important; }
+.searchbar input[type=text]{float:left !important; background:none !important; border:none !important; font-family:Arial, Helvetica, sans-serif !important; font-size:12px !important;  color: #fff !important; line-height:23px !important;}
+.searchbar input[type=submit]{float:right !important; width:24px !important; height:24px !important; background:url(../img/searchbtn.png) no-repeat !important; border:none !important;}
+.categorylink{ color: #fff !important;  float: right !important;   font-size: 16px !important;    margin: 12px !important;    text-decoration: none !important;}
+
+.eventdetail{clear:both !important; padding:20px !important;}
+.eventdetailimg{width:98% !important; border:2px solid #fff !important;}
+.eventdetail span{ float: right !important;  width: 40% !important; }
+.eventdetail span select{width:95% !important; background:rgba(0, 0, 0, 0.5) !important; font-family:Arial, Helvetica, sans-serif !important; font-size:12px !important;  color: #fff !important; line-height:23px !important; border-radius:5px !important; padding:5px !important;}
+.eventdetail h3,.eventdetail h2{height:30px !important; margin-bottom:5px !important;}
+.eventdetail button{margin-top:15px !important;}
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit{
+border : none !important; background: none !important;
+}
