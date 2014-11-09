@@ -6,7 +6,7 @@
         id        = "com.phonegap.quicken"
         version   = "1.0.0">
 
-    <name>Hello World</name>
+    <name>Quicken</name>
 
     <description>
         Quicken App
