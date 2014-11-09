@@ -1,5 +1,5 @@
-//var serviceURL = "http://quickentech.in/";
-var serviceURL = "http://localhost/quickenweb/";
+var serviceURL = "http://quickentech.in/";
+//var serviceURL = "http://localhost/quickenweb/";
 
 var events;
 
@@ -17,12 +17,12 @@ function getEmployeeList() {
 		//if(eventinfo.Ticket[0].amount != undefined && eventinfo.Ticket[0].amount != 'null'){
 			//ticketAmt = eventinfo.Ticket[0].amount;
 		//}
-			$('#eventList').append('<li><a href="eventdetails.html?id=' + event.id + '">' +
-					'<img src="' +  serviceURL + 'uploads/events/' + event.image + '"/>' +
+			$('#eventList').append('<li>' +
+					'<a href="eventdetails.html?id=' + event.id + '"><img src="' +  serviceURL + 'uploads/events/' + event.image + '"/></a>' +
 					'<h2>' + event.title + '</h2>' +
 					'<h3>Price : ' + ticketAmt + 'rs </h3>' +
 					'<h3>Seller : ' + event.seller_or_theater_name + 'rs </h3>' +
-					'</a></li>');
+					'</li>');
 		});
 		$('#eventList').listview('refresh');
 	});

@@ -34,6 +34,7 @@
   
      <form>
 	<a href="signup.html" class="ui-btn button_form">Sign up</a>
+    <a href="signin.html" class="ui-btn button_form">Sign in</a>
      
     </form>
   </div>
@@ -41,19 +42,14 @@
 </div>
 
         
-<div data-role="page" id="eventListPage" class="jqm-demos jqm-home" >
-  <div data-role="header" class="jqm-header">
-  <h1>Event &amp; Parties</h1>
-   <!-- <h1>Welcome to Quicken </h1>
-    <span>&nbsp;</span>
-    <h2><a href="#"><img src="img/logo.png" alt=""></a></h2>-->
+<div id="eventListPage" data-role="page" class="jqm-demos jqm-home" data-add-back-btn="true">
+   <div data-role="header" class="jqm-header">
+   <a href="#" data-rel="back">Back</a>
+  <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Event &amp; Parties</h1>  
   </div>
   <!-- /header -->
-  
-  <div role="main" class="jqm-content eventblock">  		
-		<div data-role="content">
-         <ul id="eventList" data-role="listview" data-filter="true"></ul>
-    </div>	
+  <div role="content" class="ui-content jqm-content eventblock">		
+		<ul id="eventList" data-role="listview" data-filter="true"></ul>
   </div>
   <!-- /content --> 
 </div>

@@ -7,7 +7,7 @@
 	border-bottom-color: #eee;*/
 }
 .jqm-demos .jqm-header h1{font-size:18px; color:#fff; text-align:center; margin:20px 0 10px 0}
-.jqm-demos .jqm-header span{height:2px; width:60px; margin:24px auto 18px auto; clear:both; background:#5b5d68; display:block;} 
+.jqm-demos .jqm-header span{  /*width:60px; height:2px; margin:24px auto 18px auto; background:#5b5d68;*/clear:both; display:block;} 
 .jqm-demos .jqm-header h2 {
 	padding: .4em 0 .1em;
 	margin: 0 2em;
@@ -35,16 +35,15 @@
 	font-weight: 300;
 	text-transform: uppercase;
 }
-.jqm-demos .jqm-header .ui-btn {
-	width: 2em;
-	height: 2em;
+.jqm-demos .jqm-header .ui-btn span.ui-btn-text {
+	/*width: 2em;
+	height: 2em;margin-top: -1em;opacity: .4;*/
 	background: none;
 	border: 0;
-	top: 50%;
-	margin-top: -1em;
+	top: 50%; display:block;	
 	-webkit-border-radius: .3125em;
 	border-radius: .3125em;
-	opacity: .4;
+	
 	filter: Alpha(Opacity=40);
 }
 
