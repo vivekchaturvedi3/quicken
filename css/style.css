@@ -30,7 +30,7 @@ form a.button_form,#signup .ui-btn{ text-align:center; padding:17px 0; color:#ff
 
 .mainbg{background:url(../img/mainimg.png) repeat; background-size:cover;}
 
-.termstitle,#eventListPage h1.ui-title{text-align:left; border-bottom:1px solid #fff; padding:10px; margin:15px auto;  width:85%; }
+.termstitle,#eventListPage h1.ui-title,#movieListPage h1.ui-title{text-align:left; border-bottom:1px solid #fff; padding:10px; margin:15px auto;  width:85%; }
 .formcontent p{font-size:12px; line-height:18px; padding-bottom:20px;}
 
 .eventblock{padding:10px;/* width: 22%;*/ margin: auto; color:#fff; float:none; }
@@ -67,6 +67,12 @@ border : none; background: none;
 #eventList a.ui-link-inherit img{float:left; position:static; margin-right: 10px;} 
 #eventList h2.ui-li-heading{float:left; width:46%; text-align:left;  font-size: 14px;   color: #797b81;    font-weight: bold; margin:0; }
 #eventList h3.ui-li-heading{float:left; width:46%; text-align:left; font-size: 12px;  color: #fff;    padding: 5px 0 0; margin:0;}
+
+#movieListPage .ui-content,#movieListPage .eventblock{padding-top:0;}
+#movieListPage #movieList{margin:0;} 
+#movieList a.ui-link-inherit img{float:left; position:static; margin-right: 10px;} 
+#movieList h2.ui-li-heading{float:left; width:46%; text-align:left;  font-size: 14px;   color: #797b81;    font-weight: bold; margin:0; }
+#movieList h3.ui-li-heading{float:left; width:46%; text-align:left; font-size: 12px;  color: #fff;    padding: 5px 0 0; margin:0;}
 
 .eventdetail a{clear:both;}
 .eventblock a.ui-input-clear.ui-btn.ui-btn-icon-notext.ui-btn-corner-all.ui-shadow.ui-btn-up-c {display: none;}

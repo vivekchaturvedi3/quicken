@@ -1,12 +1,17 @@
 $('#detailsPage').live('pageshow', function(event) {
 	var id = getUrlVars()["id"];
+	
 	$.getJSON(serviceURL + 'events/detail/'+id, displayEvent);
 });
 
 function displayEvent(data) {
 	var event = data.item.Event;
+	var type = getUrlVars()["type"];
+	foldername = 'events';
+	if(type=='1')
+		foldername = 'movies'
 	//console.log(event);
-	$('#eventPic').attr('src', serviceURL + 'uploads/events/' + event.image);
+	$('#eventPic').attr('src', serviceURL + 'uploads/' + foldername + '/' + event.image);
 	$('#sellerName').text(event.seller_or_theater_name);
 	$('#eventTitle').text(event.title);
 	$('#city').text(event.city);
