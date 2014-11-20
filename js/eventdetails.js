@@ -1,4 +1,5 @@
-$('#detailsPage').live('pageshow', function(event) {
+//$('#detailsPage').live('pageshow', function(event) {
+$(document).on('pageshow', '#detailsPage', function() {
 	var id = getUrlVars()["id"];
 	
 	$.getJSON(serviceURL + 'events/detail/'+id, displayEvent);
@@ -11,7 +12,8 @@ function displayEvent(data) {
 	if(type=='1')
 		foldername = 'movies'
 	//console.log(event);
-	$('#eventPic').attr('src', serviceURL + 'uploads/' + foldername + '/' + event.image);
+	var imgURL = serviceURL + "image.php?image=uploads/" + foldername + "/" + event.image +  "&width=225&height=169";
+	$('#eventPic').attr('src', imgURL);
 	$('#sellerName').text(event.seller_or_theater_name);
 	$('#eventTitle').text(event.title);
 	$('#city').text(event.city);

@@ -3,26 +3,33 @@
 <head>
 <title>Welcome to Quicken</title>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-
 <script src="js/jquery.js"></script>
-<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.js"></script>
 <link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css">
-<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/jqm-demos.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
-    
+
 <body class="mainbg">
 
 <div data-role="page" id="home" class="jqm-demos jqm-home">
   <div data-role="header" class="jqm-header">
     <h1>Welcome to Quicken </h1>
+	
     <span>&nbsp;</span>
     <h2><a href="#"><img src="img/logo.png" alt=""></a></h2>
   </div>
-  <!-- /header -->
   
-  <div role="main" class="ui-content jqm-content formcontent">
-  		<div class="iconblock">
+  
+	<!--	<div data-role="page" class="ui-responsive-panel">
+
+			<div data-role="header" data-theme="f">
+				<h1>My App</h1>
+				<a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+				<a href="#add-form" data-icon="plus" data-iconpos="notext">Add</a>
+			</div><!-- /header -->
+			<div data-role="content" >
+				<div class="iconblock">
         	<a href="#eventListPage" class="eventsblock" ><img src="img/eventimg.png"></a>
             <a href="#movieListPage" class="movieblock"><img src="img/movieicon.png"></a>
             <a href="#restListPage" class="resturantblock"><img src="img/resturanticon.png"></a>
@@ -37,74 +44,291 @@
     <a href="signin.html" class="ui-btn button_form">Sign in</a>
      
     </form>
-  </div>
-  <!-- /content --> 
-</div>
+			</div><!-- /content -->
 
-        
+				
+		</div><!-- /page -->
+		
+		        
 <div id="eventListPage" data-role="page" class="jqm-demos jqm-home" data-add-back-btn="true">
    <div data-role="header" class="jqm-header">
-   <a href="#" data-rel="back">Back</a>
+   <a href="#" data-rel="back" data-icon="arrow-l" data-iconpos="notext" >Back</a>
   <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Event &amp; Parties</h1>  
+   <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
   </div>
   <!-- /header -->
-  <div role="content" class="ui-content jqm-content eventblock">		
+  <div data-role="content" class="ui-content jqm-content eventblock">		
 		<ul id="eventList" data-role="listview" data-filter="true"></ul>
   </div>
   <!-- /content --> 
+  
+	<style>
+				.nav-search .ui-btn-up-a {
+					background-image:none;
+					background-color:#333333;
+				}
+				.nav-search .ui-btn-inner {
+					border-top: 1px solid #888;
+					border-color: rgba(255, 255, 255, .1);
+				}
+            </style>
+
+				<div data-role="panel" data-position="right" data-position-fixed="false" data-display="overlay" id="nav-panel" data-theme="a">
+	<ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+						<li data-icon="delete" style="background-color:#111;">
+							<a href="#" data-rel="close">Close menu</a>
+						</li>
+						<li data-filtertext="wai-aria voiceover accessibility screen reader">
+							<a href="index.html">Home</a>
+						</li>
+						<li data-filtertext="accordions collapsible set collapsible-set collapsed">
+							<a href="index.html#eventListPage">Events & Parties</a>
+						</li>
+						<li data-filtertext="ajax navigation model">
+							<a href="index.html#movieListPage">Movies</a>
+						</li>
+						<li data-filtertext="anatomy of page viewport">
+							<a href="index.html#restListPage">Restaurents</a>
+						</li>
+						<li data-filtertext="events api animationComplete transition css">
+							<a href="index.html#cakeListPage">Cake Order</a>
+						</li>
+						<li data-filtertext="listview autodivider">
+							<a href="index.html#ffListPage">Order Fast Food</a>
+						</li>
+						
+					</ul>
+
+
+					<!-- panel content goes here -->
+				</div><!-- /panel -->
+
+			
+		
 </div>
 
 <div id="movieListPage" data-role="page" class="jqm-demos jqm-home" data-add-back-btn="true">
    <div data-role="header" class="jqm-header">
-   <a href="#" data-rel="back">Back</a>
-  <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Book Movie Tickets</h1>  
+   <a href="#" data-rel="back" data-icon="arrow-l" data-iconpos="notext" >Back</a>
+  <h1>&nbsp;&nbsp;Book Movie Tickets</h1>  
+    <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
   </div>
   <!-- /header -->
-  <div role="content" class="ui-content jqm-content eventblock">		
+  <div data-role="content" class="ui-content jqm-content eventblock">		
 		<ul id="movieList" data-role="listview" data-filter="true"></ul>
   </div>
   <!-- /content --> 
+  
+  
+	<style>
+				.nav-search .ui-btn-up-a {
+					background-image:none;
+					background-color:#333333;
+				}
+				.nav-search .ui-btn-inner {
+					border-top: 1px solid #888;
+					border-color: rgba(255, 255, 255, .1);
+				}
+            </style>
+
+				<div data-role="panel" data-position="right" data-position-fixed="false" data-display="overlay" id="nav-panel" data-theme="a">
+
+					<ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+						<li data-icon="delete" style="background-color:#111;">
+							<a href="#" data-rel="close">Close menu</a>
+						</li>
+						<li data-filtertext="wai-aria voiceover accessibility screen reader">
+							<a href="index.html">Home</a>
+						</li>
+						<li data-filtertext="accordions collapsible set collapsible-set collapsed">
+							<a href="index.html#eventListPage">Events & Parties</a>
+						</li>
+						<li data-filtertext="ajax navigation model">
+							<a href="index.html#movieListPage">Movies</a>
+						</li>
+						<li data-filtertext="anatomy of page viewport">
+							<a href="index.html#restListPage">Restaurents</a>
+						</li>
+						<li data-filtertext="events api animationComplete transition css">
+							<a href="index.html#cakeListPage">Cake Order</a>
+						</li>
+						<li data-filtertext="listview autodivider">
+							<a href="index.html#ffListPage">Order Fast Food</a>
+						</li>
+						
+					</ul>
+
+					<!-- panel content goes here -->
+				</div><!-- /panel -->
+
 </div>
 
 <div id="restListPage" data-role="page" class="jqm-demos jqm-home" data-add-back-btn="true">
    <div data-role="header" class="jqm-header">
-   <a href="#" data-rel="back">Back</a>
+   <a href="#" data-rel="back" data-icon="arrow-l" data-iconpos="notext" >Back</a>
   <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Restaurent</h1>  
+    <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
   </div>
   <!-- /header -->
   <div role="content" class="ui-content jqm-content eventblock">		
 		<ul id="eventList" data-role="listview" data-filter="true"></ul>
   </div>
   <!-- /content --> 
+  <style>
+				.nav-search .ui-btn-up-a {
+					background-image:none;
+					background-color:#333333;
+				}
+				.nav-search .ui-btn-inner {
+					border-top: 1px solid #888;
+					border-color: rgba(255, 255, 255, .1);
+				}
+            </style>
+
+				<div data-role="panel" data-position="right" data-position-fixed="false" data-display="overlay" id="nav-panel" data-theme="a">
+
+						<ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+						<li data-icon="delete" style="background-color:#111;">
+							<a href="#" data-rel="close">Close menu</a>
+						</li>
+						<li data-filtertext="wai-aria voiceover accessibility screen reader">
+							<a href="index.html">Home</a>
+						</li>
+						<li data-filtertext="accordions collapsible set collapsible-set collapsed">
+							<a href="index.html#eventListPage">Events & Parties</a>
+						</li>
+						<li data-filtertext="ajax navigation model">
+							<a href="index.html#movieListPage">Movies</a>
+						</li>
+						<li data-filtertext="anatomy of page viewport">
+							<a href="index.html#restListPage">Restaurents</a>
+						</li>
+						<li data-filtertext="events api animationComplete transition css">
+							<a href="index.html#cakeListPage">Cake Order</a>
+						</li>
+						<li data-filtertext="listview autodivider">
+							<a href="index.html#ffListPage">Order Fast Food</a>
+						</li>
+						
+					</ul>
+
+
+					<!-- panel content goes here -->
+				</div><!-- /panel -->
+
 </div>
 
 <div id="cakeListPage" data-role="page" class="jqm-demos jqm-home" data-add-back-btn="true">
    <div data-role="header" class="jqm-header">
-   <a href="#" data-rel="back">Back</a>
+  <a href="#" data-rel="back" data-icon="arrow-l" data-iconpos="notext" >Back</a>
   <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cake Order</h1>  
+    <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
   </div>
   <!-- /header -->
   <div role="content" class="ui-content jqm-content eventblock">		
 		<ul id="eventList" data-role="listview" data-filter="true"></ul>
   </div>
   <!-- /content --> 
+  <style>
+				.nav-search .ui-btn-up-a {
+					background-image:none;
+					background-color:#333333;
+				}
+				.nav-search .ui-btn-inner {
+					border-top: 1px solid #888;
+					border-color: rgba(255, 255, 255, .1);
+				}
+            </style>
+
+				<div data-role="panel" data-position="right" data-position-fixed="false" data-display="overlay" id="nav-panel" data-theme="a">
+
+						<ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+						<li data-icon="delete" style="background-color:#111;">
+							<a href="#" data-rel="close">Close menu</a>
+						</li>
+						<li data-filtertext="wai-aria voiceover accessibility screen reader">
+							<a href="index.html">Home</a>
+						</li>
+						<li data-filtertext="accordions collapsible set collapsible-set collapsed">
+							<a href="index.html#eventListPage">Events & Parties</a>
+						</li>
+						<li data-filtertext="ajax navigation model">
+							<a href="index.html#movieListPage">Movies</a>
+						</li>
+						<li data-filtertext="anatomy of page viewport">
+							<a href="index.html#restListPage">Restaurents</a>
+						</li>
+						<li data-filtertext="events api animationComplete transition css">
+							<a href="index.html#cakeListPage">Cake Order</a>
+						</li>
+						<li data-filtertext="listview autodivider">
+							<a href="index.html#ffListPage">Order Fast Food</a>
+						</li>
+						
+					</ul>
+
+
+					<!-- panel content goes here -->
+				</div><!-- /panel -->
+
 </div>
 
 <div id="ffListPage" data-role="page" class="jqm-demos jqm-home" data-add-back-btn="true">
    <div data-role="header" class="jqm-header">
-   <a href="#" data-rel="back">Back</a>
+   <a href="#" data-rel="back" data-icon="arrow-l" data-iconpos="notext" >Back</a>
   <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Order Fast Food</h1>  
+    <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>ppp
   </div>
   <!-- /header -->
   <div role="content" class="ui-content jqm-content eventblock">		
 		<ul id="eventList" data-role="listview" data-filter="true"></ul>
   </div>
   <!-- /content --> 
+  <style>
+				.nav-search .ui-btn-up-a {
+					background-image:none;
+					background-color:#333333;
+				}
+				.nav-search .ui-btn-inner {
+					border-top: 1px solid #888;
+					border-color: rgba(255, 255, 255, .1);
+				}
+            </style>
+
+				<div data-role="panel" data-position="right" data-position-fixed="false" data-display="overlay" id="nav-panel" data-theme="a">
+	<ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+						<li data-icon="delete" style="background-color:#111;">
+							<a href="#" data-rel="close">Close menu</a>
+						</li>
+						<li data-filtertext="wai-aria voiceover accessibility screen reader">
+							<a href="index.html">Home</a>
+						</li>
+						<li data-filtertext="accordions collapsible set collapsible-set collapsed">
+							<a href="index.html#eventListPage">Events & Parties</a>
+						</li>
+						<li data-filtertext="ajax navigation model">
+							<a href="index.html#movieListPage">Movies</a>
+						</li>
+						<li data-filtertext="anatomy of page viewport">
+							<a href="index.html#restListPage">Restaurents</a>
+						</li>
+						<li data-filtertext="events api animationComplete transition css">
+							<a href="index.html#cakeListPage">Cake Order</a>
+						</li>
+						<li data-filtertext="listview autodivider">
+							<a href="index.html#ffListPage">Order Fast Food</a>
+						</li>
+						
+					</ul>
+
+						
+					<!-- panel content goes here -->
+				</div><!-- /panel -->
+
 </div>
 
-<script src="js/eventlist.js"></script>
+	</body>
+	<script src="js/eventlist.js"></script>
 <script src="js/eventdetails.js"></script>
-
-</body>
 
 </html>

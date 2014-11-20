@@ -2,43 +2,99 @@
 <html>
 <head>
 </head>
-    
+
 <body>
 <div id="detailsPage" data-role="page" class="jqm-demos jqm-home" data-add-back-btn="true">
-  <div data-role="header" class="jqm-header">
-   <a href="#" data-rel="back">Back</a>
-  <h1>Event &amp; Parties</h1>  
+  
+    <div data-role="header" class="jqm-header">
+   <a href="#" data-rel="back" data-icon="arrow-l" data-iconpos="notext" >Back</a>
+  <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Event &amp; Parties</h1>  
+   <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
   </div>
   <!-- /header -->
-  
-  <div role="content" class="ui-content jqm-content eventblock">  		
-  		<form>
-<ul>
-             <li> <a href="#"><img id="eventPic" class="eventdetailimg" src="" /></a>
-            	<div class="eventdetail"><h2>Title : <span id="eventTitle"></span></h2>
-                   <h3>Seller Name : <span  id="sellerName"></span></h3>
-                <h3>Price : <span  id="tickets"></span></h3>
-				
-                 <h3>Ticket : <span><select>
-                 	<option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                 </select></span></h3>
-            <form><div class="clear"></div>
-	<a href="signup.html" class="ui-btn button_form">Submit</a>     
+  <div data-role="content" class="ui-content jqm-content eventblock">	
+ 
+    <ul>
+    <!--<li>
+            	<a href="#" class="sorting">Sort By Image</a>
+                <div class="eventrightcontent"><a href="#" class="sorting"> Sort By Name</a></div>
+            </li>-->
+    
+    <li> <a href="#" class="eventdetailimg"><img id="eventPic"src="" /></a>
+      <div class="eventdetail">
+      <h2>Title : <span id="eventTitle"></span></h2>
+      <h3>Seller Name : <span  id="sellerName"></span></h3>
+      <h3>Price : <span id="tickets"></span></h3>
+      <h3>Ticket : <span>
+        <select>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
+        </span></h3>
+    
+    <form>
+      <div class="clear"></div>
+      <a href="signup.html" class="ui-btn button_form">Submit</a>
     </form>
-                 </div>                 
-             </li>
-        </ul>
   </div>
-  <!-- /content --> 
+  </li>
+  </ul>
+
+	</div>
+	<!-- /content -->
+	<style>
+				.nav-search .ui-btn-up-a {
+					background-image:none;
+					background-color:#333333;
+				}
+				.nav-search .ui-btn-inner {
+					border-top: 1px solid #888;
+					border-color: rgba(255, 255, 255, .1);
+				}
+            </style>
+
+				<div data-role="panel" data-position="right" data-position-fixed="false" data-display="overlay" id="nav-panel" data-theme="a">
+	<ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+						<li data-icon="delete" style="background-color:#111;">
+							<a href="#" data-rel="close">Close menu</a>
+						</li>
+						<li data-filtertext="wai-aria voiceover accessibility screen reader">
+							<a href="index.html">Home</a>
+						</li>
+						<li data-filtertext="accordions collapsible set collapsible-set collapsed">
+							<a href="index.html#eventListPage">Events & Parties</a>
+						</li>
+						<li data-filtertext="ajax navigation model">
+							<a href="index.html#movieListPage">Movies</a>
+						</li>
+						<li data-filtertext="anatomy of page viewport">
+							<a href="index.html#restListPage">Restaurents</a>
+						</li>
+						<li data-filtertext="events api animationComplete transition css">
+							<a href="index.html#cakeListPage">Cake Order</a>
+						</li>
+						<li data-filtertext="listview autodivider">
+							<a href="index.html#ffListPage">Order Fast Food</a>
+						</li>
+						
+					</ul>
+
+
+					<!-- panel content goes here -->
+				</div><!-- /panel -->
+
+			
+		
+
+
 </div>
 </body>
 </html>

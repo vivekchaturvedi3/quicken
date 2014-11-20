@@ -5,22 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Welcome to Quicken</title>
 <script src="js/jquery.js"></script>
-<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.js"></script>
 <link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css">
-<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/jqm-demos.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="mainbg">
-<div data-role="page" class="jqm-demos jqm-home" data-add-back-btn="true">
+<div data-role="page" class="jqm-demos jqm-home">
   <div data-role="header" class="jqm-header">
-  <a href="#" data-rel="back">Back</a>
-    <h1>&nbsp;&nbsp;&nbsp;Welcome to Quicken </h1>
+  <a href="#" data-rel="back" data-icon="arrow-l" data-iconpos="notext" >Back</a>
+    <h1>Welcome to Quicken </h1>    
     <h2><a href="#"><img src="img/logo.png" alt=""></a></h2>
+	<a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
   </div>
   <!-- /header -->
   
-  <div role="main" class="ui-content jqm-content formcontent">
+  <div data-role="content"  class="ui-content jqm-content formcontent">
     <form id="signup" name="signup" action="" >
       <input id="name" name="name" type="text" placeholder="Name" required />
       <input id="email" name="email" type="email" placeholder="E-mail address" required />
@@ -32,6 +33,48 @@
     </form>
   </div>
   <!-- /content --> 
+  
+  <style>
+				.nav-search .ui-btn-up-a {
+					background-image:none;
+					background-color:#333333;
+				}
+				.nav-search .ui-btn-inner {
+					border-top: 1px solid #888;
+					border-color: rgba(255, 255, 255, .1);
+				}
+            </style>
+
+				<div data-role="panel" data-position="right" data-position-fixed="false" data-display="overlay" id="nav-panel" data-theme="a">
+	<ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+						<li data-icon="delete" style="background-color:#111;">
+							<a href="#" data-rel="close">Close menu</a>
+						</li>
+						<li data-filtertext="wai-aria voiceover accessibility screen reader">
+							<a href="index.html">Home</a>
+						</li>
+						<li data-filtertext="accordions collapsible set collapsible-set collapsed">
+							<a href="index.html#eventListPage">Events & Parties</a>
+						</li>
+						<li data-filtertext="ajax navigation model">
+							<a href="index.html#movieListPage">Movies</a>
+						</li>
+						<li data-filtertext="anatomy of page viewport">
+							<a href="index.html#restListPage">Restaurents</a>
+						</li>
+						<li data-filtertext="events api animationComplete transition css">
+							<a href="index.html#cakeListPage">Cake Order</a>
+						</li>
+						<li data-filtertext="listview autodivider">
+							<a href="index.html#ffListPage">Order Fast Food</a>
+						</li>
+						
+					</ul>
+
+
+					<!-- panel content goes here -->
+				</div><!-- /panel -->
+
 </div>
 </body>
 </html>

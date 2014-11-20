@@ -6,10 +6,10 @@
 	border-top: 4px solid #3eb249;
 	border-bottom-color: #eee;*/
 }
-.jqm-demos .jqm-header h1{font-size:18px; color:#fff; text-align:center; margin:20px 0 10px 0}
+.jqm-demos .jqm-header h1{font-size:18px; color:#fff; text-align:center; margin:8px 0 0; padding-top:0;}
 .jqm-demos .jqm-header span{  /*width:60px; height:2px; margin:24px auto 18px auto; background:#5b5d68;*/clear:both; display:block;} 
 .jqm-demos .jqm-header h2 {
-	padding: .4em 0 .1em;
+	padding:0 .4em 0 .1em;
 	margin: 0 2em;
 }
 .termstitle{  margin: auto;     }
@@ -19,7 +19,7 @@
 }
 .jqm-demos .jqm-header h2 img {
 	display: block;
-	width: 100%;
+	width: 40% !important; margin:auto;
 	height: auto;
 }
 .jqm-demos .jqm-header h2 > img {
@@ -734,3 +734,6 @@
 	color: #fff;
 	text-shadow: none;
 }
+
+.jqm-header .ui-btn-left{font-size: 14px;border: none !important; background: none !important; top:1px;}
+.jqm-header .ui-btn-right{font-size: 14px;border: none !important; background: none !important; top:1px;}
