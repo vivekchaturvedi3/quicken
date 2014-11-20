@@ -38,7 +38,7 @@ function getMovieList() {
 		$('#movieList li').remove();
 		movies = data.items;
 		$.each(movies, function(index, movieinfo) {
-		alert(movieinfo);
+		//alert(movieinfo);
 		var movie = movieinfo.Event;
 		var ticketAmt = 0;
 		var imgURL = serviceURL + "image.php?image=uploads/movies/" + movie.image +  "&width=100&height=75";
