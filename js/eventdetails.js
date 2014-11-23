@@ -1,7 +1,6 @@
 //$('#detailsPage').live('pageshow', function(event) {
 $(document).on('pageshow', '#detailsPage', function() {
-	var id = getUrlVars()["id"];
-	
+	var id = getUrlVars()["id"];	
 	$.getJSON(serviceURL + 'events/detail/'+id, displayEvent);
 });
 
@@ -27,6 +26,42 @@ function displayEvent(data) {
 	});
 	optionsTicket += '</Select>';
 	$('#tickets').html(optionsTicket);
+	//$('#actionList').listview('refresh');
+	
+}
+$(document).on('pageshow', '#detailsPageRest', function() {
+	var id = getUrlVars()["id"];	
+	$.getJSON(serviceURL + 'restaurants/detail/'+id, displayRest);
+});
+
+function displayRest(data) {
+	var restaurant = data.item.Restaurant;
+	var type = getUrlVars()["type"];
+	foldername = 'restaurants';
+	
+	if(type=='1'){
+		foldername = 'bakeries'
+		$('#pageTitle').html("Cake Order");
+	}else if(type=='2'){
+		foldername = 'foods';
+		$('#pageTitle').html("Order Fast Food");
+	}
+	//console.log(event);
+	var imgURL = serviceURL + "image.php?image=uploads/" + foldername + "/" + restaurant.image +  "&width=225&height=169";
+	$('#eventPic').attr('src', imgURL);
+	$('#sellerName').text(restaurant.owner_name);
+	$('#eventTitle').text(restaurant.title);
+	$('#city').text(restaurant.city);
+	//console.log(data.item.Ticket);
+	menues = data.item.Menu;
+	//alert(tickets);
+	var optionsMenu = '<Select>';
+	$.each(menues, function(index, menueInfo) {
+		optionsMenu += '<option value="' + menueInfo.id + '">' + menueInfo.amount + '</option>';
+		
+	});
+	optionsMenu += '</Select>';
+	$('#menues').html(optionsMenu);
 	//$('#actionList').listview('refresh');
 	
 }
