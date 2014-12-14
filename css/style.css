@@ -15,7 +15,7 @@ body{background:#323542; font-family:Arial, Helvetica, sans-serif;}
 .agreetxt input[type=checkbox]{float: left;    margin: 2px 5px 0 0;}
 .agreetxt span{float:left; padding:4px 0 0 36px;}
 
-form a.button_form,#signup .ui-btn{ text-align:center; padding:7px 0; color:#fff; font-size:12px; border:none; border-radius:4px; -webkit-border-radius:4px; -khtml-border-radius:4px; margin:5px auto;  font-family:Arial, Helvetica, sans-serif; cursor:pointer; background:#0bd38a;}
+form a.button_form,#signup .ui-btn{ text-align:center; padding:10px 0; color:#fff; font-size:12px; border:none; border-radius:4px; -webkit-border-radius:4px; -khtml-border-radius:4px; margin:5px auto;  font-family:Arial, Helvetica, sans-serif; cursor:pointer; background:#0bd38a;}
 
 .forgotlink{clear:both; padding:15px 0; font-size:14px; color:#6d6f76;}
 .forgotlink a{color:#6d6f76;text-decoration:none;}
@@ -30,7 +30,7 @@ form a.button_form,#signup .ui-btn{ text-align:center; padding:7px 0; color:#fff
 
 .mainbg{background:url(../img/mainimg.png) repeat; background-size:cover;}
 
-.termstitle,#eventListPage h1.ui-title{text-align:left; border-bottom:1px solid #fff; padding:10px; margin:15px auto;  width:85%; }
+.termstitle,#eventListPage h1.ui-title{text-align:left; border-bottom:1px solid #fff; text-align:center; /*padding:10px;*/ margin:15px auto;  width:85%; }
 .formcontent p{font-size:12px; line-height:18px; padding-bottom:20px;}
 
 .eventblock{padding:10px;/* width: 22%;*/ margin: auto; color:#fff; float:none; }
@@ -75,3 +75,84 @@ h3 .ui-select div.ui-btn span{float:left; font-size:12px;}
 .eventblock li.ui-li-has-thumb a{width: 100px; height: 100px;overflow: hidden;display: block;float: left; margin-right:10px; background:none !important; border:none !important; padding-left:0 !important; min-height:inherit !important; padding:0;}
 .eventblock li a.ui-icon-carat-r:after{background:none; border:none; display:none;}
 .eventblock li.ui-li-has-thumb a img{width: 100%; max-width:inherit !important; max-height:inherit !important;}
+
+.CheckOutblock{clear:both;}
+.CheckOutblock td{padding:5px; font-size:12px;}
+.CheckOutblock td .ui-select{width: 38px; margin:0;}
+.CheckOutblock td .ui-btn{padding:.4em 5px; font-size: 12px; text-align:left; font-weight:normal;}
+.CheckOutblock td .ui-btn-icon-left:after,.CheckOutblock td  .ui-btn-icon-right:after,.CheckOutblock td  .ui-btn-icon-top:after,.CheckOutblock td  .ui-btn-icon-bottom:after,.CheckOutblock td  .ui-btn-icon-notext:after{width: 10px;border-radius: 5px; height: 10px; background-color:none !important; font-weight:normal;}
+.CheckOutblock td .ui-btn-icon-notext:after,.CheckOutblock td  .ui-btn-icon-left:after,.CheckOutblock td  .ui-btn-icon-right:after{top: 27%;
+ margin-top: 0px; }
+
+.totalprice{padding:10px 0;}
+.eventdetail span select#selectTicket_7{width:71%;}
+.eventdetail span select#selectTicket_8{width:65%; margin-top: 10px;}
+.MarT15{margin-top:15px !important;}
+
+/*----------14Dec CSS----------*/
+.alert-success {
+    background-color: #e1ffd9;
+    border: 1px solid #92da7f; color: #468847; margin-bottom: 20px;
+}
+.alert {
+    position: relative; padding: 15px 15px 15px 56px;font-size:14px; 
+}
+.alert-warning {
+    background-color: #fff9d5;
+    border: 1px solid #f0d229; color: #c09853;margin-bottom: 20px;
+}
+.alert-danger {
+    background-color: #ffd3d0;
+    border: 1px solid #f25549; color: #b94a48;margin-bottom: 20px;
+}
+.alert-info {
+    background-color: #e7f4ff;
+    border: 1px solid #9ac8f1; color: #3a87ad;margin-bottom: 20px;
+}
+.alert-success span {
+    background-color: #92da7f;
+}
+.alert span {
+    bottom: 0;
+    color: #fff;
+    font-size: 15px;
+    left: 0;
+    padding-left: 13px;
+    padding-top: 15px;
+    position: absolute;
+    top: 0;
+    width: 32px;
+}
+.alert-success .close {
+    color: #92da7f;
+}
+.alert .close {
+    opacity: 1;
+}
+.close {
+    float: right;text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff;  position: absolute;
+    right: 5px;
+    top: 12px;
+}
+.alert-warning span {
+    background-color: #f0d229;
+}
+.alert-warning .close {
+    color: #f0d229;
+}
+.alert-danger span {
+    background-color: #f25549;
+}
+.alert-danger .close {
+    color: #f25549;
+}
+.alert-info span {
+    background-color: #9ac8f1;
+}
+.alert-info .close {
+    color: #9ac8f1;
+}

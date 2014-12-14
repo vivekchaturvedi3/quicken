@@ -1,6 +1,7 @@
 //$('#detailsPage').live('pageshow', function(event) {
 $(document).on('pageshow', '#detailsPage', function() {
-	var id = getUrlVars()["id"];	
+	var id = getUrlVars()["id"];
+	
 	$.getJSON(serviceURL + 'events/detail/'+id, displayEvent);
 });
 
@@ -19,50 +20,23 @@ function displayEvent(data) {
 	//console.log(data.item.Ticket);
 	tickets = data.item.Ticket;
 	//alert(tickets);
-	var optionsTicket = '<Select>';
+	var ticketStr = '';
+	
 	$.each(tickets, function(index, ticketInfo) {
-		optionsTicket += '<option value="' + ticketInfo.id + '">' + ticketInfo.amount + '</option>';
+	ticketStr += '<h3>' + ticketInfo.title + '<span class="ticketPrice">Rs. ' + ticketInfo.amount + '</span>';
+	ticketStr += '<span class="tickets">'
+	var tquan = ticketInfo.quantity;
+	var optionsTicket = '<Select id="selectTicket_' + ticketInfo.id + '" name="selectTicket[' + ticketInfo.id + ']" class="selectTicket">';
+		for(i=0;i<=tquan;i++){			
+			optionsTicket += '<option value="' + i + '">' + i + '</option>';
+		}
+		optionsTicket += '</Select>';
+	ticketStr += optionsTicket + '</span></h3>';
 		
 	});
-	optionsTicket += '</Select>';
-	$('#tickets').html(optionsTicket);
-	//$('#actionList').listview('refresh');
 	
-}
-$(document).on('pageshow', '#detailsPageRest', function() {
-	var id = getUrlVars()["id"];	
-	$.getJSON(serviceURL + 'restaurants/detail/'+id, displayRest);
-});
-
-function displayRest(data) {
-	var restaurant = data.item.Restaurant;
-	var type = getUrlVars()["type"];
-	foldername = 'restaurants';
-	
-	if(type=='1'){
-		foldername = 'bakeries'
-		$('#pageTitle').html("Cake Order");
-	}else if(type=='2'){
-		foldername = 'foods';
-		$('#pageTitle').html("Order Fast Food");
-	}
-	//console.log(event);
-	var imgURL = serviceURL + "image.php?image=uploads/" + foldername + "/" + restaurant.image +  "&width=225&height=169";
-	$('#eventPic').attr('src', imgURL);
-	$('#sellerName').text(restaurant.owner_name);
-	$('#eventTitle').text(restaurant.title);
-	$('#city').text(restaurant.city);
-	//console.log(data.item.Ticket);
-	menues = data.item.Menu;
-	//alert(tickets);
-	var optionsMenu = '<Select>';
-	$.each(menues, function(index, menueInfo) {
-		optionsMenu += '<option value="' + menueInfo.id + '">' + menueInfo.amount + '</option>';
-		
-	});
-	optionsMenu += '</Select>';
-	$('#menues').html(optionsMenu);
-	//$('#actionList').listview('refresh');
+	$('#tickets').html(ticketStr);
+	$(".selectTicket").selectmenu("refresh");
 	
 }
 

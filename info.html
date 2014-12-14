@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css">
 <link rel="stylesheet" href="css/jqm-demos.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/font-awesome.css">
 </head>
 
 <body class="mainbg">
@@ -17,20 +18,16 @@
     <span>&nbsp;</span>
     <h2><a href="#"><img src="img/logo.png" alt=""></a></h2>
   </div>
-  
-  <!--	<div data-role="page" class="ui-responsive-panel">
-
-			<div data-role="header" data-theme="f">
-				<h1>My App</h1>
-				<a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
-				<a href="#add-form" data-icon="plus" data-iconpos="notext">Add</a>
-			</div><!-- /header -->
-  <div data-role="content" >
-    <div class="iconblock"> <a href="#eventListPage" class="eventsblock" ><img src="img/eventimg.png"></a> <a href="#movieListPage" class="movieblock"><img src="img/movieicon.png"></a> <a href="#restListPage" class="resturantblock"><img src="img/resturanticon.png"></a> <a href="#cakeListPage" class="cakeiconblock"><img src="img/cakeicon.png"></a> <a href="#ffListPage" class="fastfoodiconblock"><img src="img/fastfoodicon.png"></a>
-      <div class="clear"></div>
-    </div>
+  <div data-role="content">
+    <div class="alert alert-success"><span class="fa fa-flag"></span>Success! Notification goes here <a href="#" class="close">x</a></div>
+   
+    <div class="alert alert-warning"><span class="fa fa-bell"></span>Warning! Notification goes here <a href="#" class="close">x</a></div>
+   
+    <div class="alert alert-danger"><span class="fa fa-warning"></span>Danger! Notification goes here <a href="#" class="close">x</a></div>
+    
+    <div class="alert alert-info"><span class="fa fa-info-circle"></span>Information! Notification goes here! Notification goes here <a href="#" class="close">x</a></div>
     <form>
-      <a href="signup.html" class="ui-btn button_form">Sign up</a> <a href="signin.html" class="ui-btn button_form">Sign in</a>
+      <a href="#" class="ui-btn button_form">Continue</a>
     </form>
   </div>
   <!-- /content --> 
@@ -118,7 +115,7 @@
     <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a> </div>
   <!-- /header -->
   <div role="content" class="ui-content jqm-content eventblock">
-    <ul id="restaurantList" data-role="listview" data-filter="true">
+    <ul id="eventList" data-role="listview" data-filter="true">
     </ul>
   </div>
   <!-- /content -->
@@ -154,7 +151,7 @@
     <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a> </div>
   <!-- /header -->
   <div role="content" class="ui-content jqm-content eventblock">
-    <ul id="cakeList" data-role="listview" data-filter="true">
+    <ul id="eventList" data-role="listview" data-filter="true">
     </ul>
   </div>
   <!-- /content -->
@@ -190,7 +187,7 @@
     <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a> </div>
   <!-- /header -->
   <div role="content" class="ui-content jqm-content eventblock">
-    <ul id="ffList" data-role="listview" data-filter="true">
+    <ul id="eventList" data-role="listview" data-filter="true">
     </ul>
   </div>
   <!-- /content -->

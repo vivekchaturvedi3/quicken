@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to Quicken</title>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.5.js"></script>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css">
+<link rel="stylesheet" href="css/jqm-demos.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div data-role="page" class="jqm-demos jqm-home">
+  <div data-role="header" class="jqm-header"> <a href="#" data-rel="back" data-icon="arrow-l" data-iconpos="notext" >Back</a>
+    <h1>Welcome to Quicken </h1>
+    <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a> </div>
+  <!-- /header -->
+  
+  <div data-role="content" class="ui-content jqm-content formcontent"> 
+    <!-- cart showing -->
+    <div class="CheckOutblock">
+      <table width="100%" border="1" cellspacing="0" cellpadding="0">
+        <tr class="BgGray">
+          <td align="left" valign="middle" class="TblBrdB2"><strong>Event</strong></td>
+          <td  align="center" valign="middle" class="TblBrdB2"><strong>Price</strong></td>
+          <td  align="center" valign="middle" class="TblBrdB2"><strong>Quantity</strong></td>
+          <td  align="center" valign="middle" class="TblBrdB2"><strong>Total</strong></td>
+        </tr>
+        <tr class="BgGray1">
+          <td align="left" valign="middle" class="TblBrdB2"><strong>Test 1 -</strong> Ticket: Third Ticket</td>
+          <td  align="center" valign="middle" class="TblBrdB2"><strong>$30.00</strong></td>
+          <td  align="center" valign="middle" class="TblBrdB2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center" valign="middle"><select name="no_of_tickets[32]" id="no_of_tickets" class="Textarea6" style="width:55px; padding:2px 2px 2px 3px;" onchange="document.updateCartTicketForm.submit();">
+                    <option value="0" >0</option>
+                    <option value="1" >1</option>
+                    <option value="2" selected='selected'>2</option>
+                    <option value="3" >3</option>
+                    <option value="4" >4</option>
+                    <option value="5" >5</option>
+                    <option value="6" >6</option>
+                    <option value="7" >7</option>
+                    <option value="8" >8</option>
+                    <option value="9" >9</option>
+                    <option value="10" >10</option>
+                  </select></td>
+                
+                <!--      <td align="right" valign="middle"><a href="javascript:void(0);" onclick="document.updateCartTicketForm32.submit();"><img src="https://www.vitalticketing.com/images/update_icon.png" alt=""  height="11" border="0" /></a></td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                 <td align="left" valign="middle" class="TblBrdB1 Light11A Black6 PadL5"><a href="javascript:void(0);" onclick="document.updateCartTicketForm32.submit();" class="Black6">Update</a></td>
+                                                                                                                                                                                                                        <form action="" method="post" name="deleteCartTicketForm?php e($cartDetail['id']); ?>" id="deleteCartTicketForm32" >
+                                                                                                                                                                                                                                                                                                                                                                                                                                 <input type="hidden" name="action" id="action" value="deleteCart"  />
+                                                                                                                                                                                                                                                                                                                                                                                                                                 <input type="hidden" name="cart_id" id="cart_id" value="?php e($cartDetail['cart_id']); ?>" />
+                                                                                                                                                                                                                                                                                                                                                                                                                                 <input type="hidden" name="id" id="id" value="?php e($cartDetail['id']); ?>" />
+                                                    -->
+                <td align="right" valign="middle" class="TblBrdB1 Light11A Black6"><a href="javascript:void(0);" onclick="if(confirm('Are you sure you want to delete this ticket from cart?')){ window.location='https://www.vitalticketing.com/cart/delete/32/22/0/';}"><img src="https://www.vitalticketing.com/images/delete_icon.png" alt="delete"  height="11" border="0" /></a></td>
+              </tr>
+            </table></td>
+          <td  align="center" valign="middle" class="TblBrdB2"><strong>$77.90</strong></td>
+        </tr>
+        <tr class="BgGray1">
+          <td align="left" valign="middle" class="TblBrdB2"><strong>Test 1 -</strong> Ticket: Second ticket</td>
+          <td  align="center" valign="middle" class="TblBrdB2"><strong>$20.00</strong></td>
+          <td  align="center" valign="middle" class="TblBrdB2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center" valign="middle"><select name="no_of_tickets[31]" id="no_of_tickets" class="Textarea6" style="width:55px; padding:2px 2px 2px 3px;" onchange="document.updateCartTicketForm.submit();">
+                    <option value="0" >0</option>
+                    <option value="1" >1</option>
+                    <option value="2" >2</option>
+                    <option value="3" >3</option>
+                    <option value="4" selected='selected'>4</option>
+                    <option value="5" >5</option>
+                    <option value="6" >6</option>
+                    <option value="7" >7</option>
+                    <option value="8" >8</option>
+                    <option value="9" >9</option>
+                    <option value="10" >10</option>
+                  </select></td>
+                
+                <!--      <td align="right" valign="middle"><a href="javascript:void(0);" onclick="document.updateCartTicketForm31.submit();"><img src="https://www.vitalticketing.com/images/update_icon.png" alt=""  height="11" border="0" /></a></td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                 <td align="left" valign="middle" class="TblBrdB1 Light11A Black6 PadL5"><a href="javascript:void(0);" onclick="document.updateCartTicketForm31.submit();" class="Black6">Update</a></td>
+                                                                                                                                                                                                                        <form action="" method="post" name="deleteCartTicketForm?php e($cartDetail['id']); ?>" id="deleteCartTicketForm31" >
+                                                                                                                                                                                                                                                                                                                                                                                                                                 <input type="hidden" name="action" id="action" value="deleteCart"  />
+                                                                                                                                                                                                                                                                                                                                                                                                                                 <input type="hidden" name="cart_id" id="cart_id" value="?php e($cartDetail['cart_id']); ?>" />
+                                                                                                                                                                                                                                                                                                                                                                                                                                 <input type="hidden" name="id" id="id" value="?php e($cartDetail['id']); ?>" />
+                                                    -->
+                <td align="right" valign="middle" class="TblBrdB1 Light11A Black6"><a href="javascript:void(0);" onclick="if(confirm('Are you sure you want to delete this ticket from cart?')){ window.location='https://www.vitalticketing.com/cart/delete/31/22/0/';}"><img src="https://www.vitalticketing.com/images/delete_icon.png" alt="delete"  height="11" border="0" /></a></td>
+              </tr>
+            </table></td>
+          <td  align="center" valign="middle" class="TblBrdB2"><strong>$96.84</strong></td>
+        </tr>
+        <tr class="BgGray1">
+          <td align="left" valign="middle" class="TblBrdB2"><strong>Test 1 -</strong> Ticket: First ticket</td>
+          <td  align="center" valign="middle" class="TblBrdB2"><strong>$10.00</strong></td>
+          <td  align="center" valign="middle" class="TblBrdB2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center" valign="middle"><select name="no_of_tickets[30]" id="no_of_tickets" class="Textarea6" style="width:55px; padding:2px 2px 2px 3px;" onchange="document.updateCartTicketForm.submit();">
+                    <option value="0" >0</option>
+                    <option value="1" selected='selected'>1</option>
+                    <option value="2" >2</option>
+                    <option value="3" >3</option>
+                    <option value="4" >4</option>
+                    <option value="5" >5</option>
+                    <option value="6" >6</option>
+                    <option value="7" >7</option>
+                    <option value="8" >8</option>
+                    <option value="9" >9</option>
+                    <option value="10" >10</option>
+                  </select></td>
+                
+                <!--      <td align="right" valign="middle"><a href="javascript:void(0);" onclick="document.updateCartTicketForm30.submit();"><img src="https://www.vitalticketing.com/images/update_icon.png" alt=""  height="11" border="0" /></a></td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                 <td align="left" valign="middle" class="TblBrdB1 Light11A Black6 PadL5"><a href="javascript:void(0);" onclick="document.updateCartTicketForm30.submit();" class="Black6">Update</a></td>
+                                                                                                                                                                                                                        <form action="" method="post" name="deleteCartTicketForm?php e($cartDetail['id']); ?>" id="deleteCartTicketForm30" >
+                                                                                                                                                                                                                                                                                                                                                                                                                                 <input type="hidden" name="action" id="action" value="deleteCart"  />
+                                                                                                                                                                                                                                                                                                                                                                                                                                 <input type="hidden" name="cart_id" id="cart_id" value="?php e($cartDetail['cart_id']); ?>" />
+                                                                                                                                                                                                                                                                                                                                                                                                                                 <input type="hidden" name="id" id="id" value="?php e($cartDetail['id']); ?>" />
+                                                    -->
+                <td align="right" valign="middle" class="TblBrdB1 Light11A Black6"><a href="javascript:void(0);" onclick="if(confirm('Are you sure you want to delete this ticket from cart?')){ window.location='https://www.vitalticketing.com/cart/delete/30/22/0/';}"><img src="https://www.vitalticketing.com/images/delete_icon.png" alt="delete"  height="11" border="0" /></a></td>
+              </tr>
+            </table></td>
+          <td  align="center" valign="middle" class="TblBrdB2"><strong>$13.68</strong></td>
+        </tr>
+      </table>
+    </div>
+    <div class="CheckOutblock totalprice">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr class="BgGray">
+          <td align="right" valign="middle" class="TblBrdB4"><strong>Total Price</strong></td>
+          <td  align="center" valign="middle" class="TblBrdB4"><strong>$150.00</strong></td>
+        </tr>
+        <tr class="BgGray">
+          <td align="right" valign="middle" class="TblBrdB4"><strong>Service Charge</strong></td>
+          <td  align="center" valign="middle" class="TblBrdB4"><strong>$38.42</strong></td>
+        </tr>
+        <tr class="BgGray">
+          <td align="right" valign="middle"><strong>Grand Total</strong></td>
+          <td  align="center" valign="middle"><strong>$188.42</strong></td>
+        </tr>
+      </table>
+    </div>
+    <form>
+      <div class="clear"></div>
+      <a href="signup.html" class="ui-btn button_form">Checkout</a>
+    </form>
+  </div>
+  <!-- /content -->
+  
+  <style>
+				.nav-search .ui-btn-up-a {
+					background-image:none;
+					background-color:#333333;
+				}
+				.nav-search .ui-btn-inner {
+					border-top: 1px solid #888;
+					border-color: rgba(255, 255, 255, .1);
+				}
+            </style>
+  <div data-role="panel" data-position="right" data-position-fixed="false" data-display="overlay" id="nav-panel" data-theme="a">
+    <ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+      <li data-icon="delete" style="background-color:#111;"> <a href="#" data-rel="close">Close menu</a> </li>
+      <li data-filtertext="wai-aria voiceover accessibility screen reader"> <a href="index.html">Home</a> </li>
+      <li data-filtertext="accordions collapsible set collapsible-set collapsed"> <a href="index.html#eventListPage">Events & Parties</a> </li>
+      <li data-filtertext="ajax navigation model"> <a href="index.html#movieListPage">Movies</a> </li>
+      <li data-filtertext="anatomy of page viewport"> <a href="index.html#restListPage">Restaurents</a> </li>
+      <li data-filtertext="events api animationComplete transition css"> <a href="index.html#cakeListPage">Cake Order</a> </li>
+      <li data-filtertext="listview autodivider"> <a href="index.html#ffListPage">Order Fast Food</a> </li>
+    </ul>
+    
+    <!-- panel content goes here --> 
+  </div>
+  <!-- /panel --> 
+  
+</div>
+</body>
+</html>
