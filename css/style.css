@@ -28,7 +28,7 @@ form a.button_form,#signup .ui-btn{ text-align:center; padding:10px 0; color:#ff
 .clear{clear:both;}
 .cakeiconblock img{margin-left:50px}
 
-.mainbg{background:url(../img/mainimg.png) repeat; background-size:cover;}
+.mainbg{background:url(../img/mainimg.png) no-repeat fixed;}
 
 .termstitle,#eventListPage h1.ui-title{text-align:left; border-bottom:1px solid #fff; text-align:center; /*padding:10px;*/ margin:15px auto;  width:85%; }
 .formcontent p{font-size:12px; line-height:18px; padding-bottom:20px;}
@@ -53,8 +53,8 @@ form a.button_form,#signup .ui-btn{ text-align:center; padding:10px 0; color:#ff
 .eventdetailimg{width:84%; display:block; margin:auto;  border:1px solid #fff !important;}
 .eventdetailimg img{width:100%;}
 .eventdetail span{ float: right;  width: 40%; }
-.eventdetail span select{width:99%; background:rgba(0, 0, 0, 0.5); font-family:Arial, Helvetica, sans-serif; font-size:12px;  color: #fff; line-height:23px; border-radius:5px; padding:5px; margin-top:-5px;}
-.eventdetail h3,.eventdetail h2{height:30px; margin-bottom:5px; color: white;}
+.eventdetail span select{width:99%; background:rgba(0, 0, 0, 0.5); border:none; font-family:Arial, Helvetica, sans-serif; font-size:12px;  color: #fff; line-height:23px; border-radius:5px; padding:5px; margin-top:-5px;}
+.eventdetail h3,.eventdetail h2{height:30px; margin-bottom:5px; color: white; text-transform: capitalize;}
 .eventdetail button{margin-top:15px;}
 .ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit{
 border : none; background: none;
@@ -76,7 +76,7 @@ h3 .ui-select div.ui-btn span{float:left; font-size:12px;}
 .eventblock li a.ui-icon-carat-r:after{background:none; border:none; display:none;}
 .eventblock li.ui-li-has-thumb a img{width: 100%; max-width:inherit !important; max-height:inherit !important;}
 
-.CheckOutblock{clear:both;}
+.CheckOutblock{clear:both; padding-bottom:20px;}
 .CheckOutblock td{padding:5px; font-size:12px;}
 .CheckOutblock td .ui-select{width: 38px; margin:0;}
 .CheckOutblock td .ui-btn{padding:.4em 5px; font-size: 12px; text-align:left; font-weight:normal;}
@@ -85,7 +85,7 @@ h3 .ui-select div.ui-btn span{float:left; font-size:12px;}
  margin-top: 0px; }
 
 .totalprice{padding:10px 0;}
-.eventdetail span select#selectTicket_7{width:71%;}
+.eventdetail span select#selectTicket_7{width:71%;margin-top: 10px;}
 .eventdetail span select#selectTicket_8{width:65%; margin-top: 10px;}
 .MarT15{margin-top:15px !important;}
 
@@ -156,3 +156,20 @@ h3 .ui-select div.ui-btn span{float:left; font-size:12px;}
 .alert-info .close {
     color: #9ac8f1;
 }
+
+.CheckOutblock ul{float:left; width:100%;}
+.CheckOutblock ul li{float:left; width:94%; padding:10px 3%; border-bottom:1px solid #ccc; list-style:none;}
+/*.CheckOutblock ul li{background:rgba(0,0,0,0.4);}*/
+.CheckOutblock ul li h2{font-size:18px; padding-bottom:10px;}
+.CheckOutblock ul li h3{font-size:15px; padding-bottom:10px;}
+.floatleft{float:left;}
+.floatright{float:right;}
+.CheckOutblock ul li a{text-decoration: none;color: #2997f9 !important;font-size: 14px;width: 20px;height: 20px;float: right;background: #fff;text-align: center;border-radius: 20px;line-height: 20px;font-weight: normal;}
+.totalpricebox{background:#f8f8f8; border:1px solid #e6e6e6; padding:10px; color:#2997f9; width:85%; margin:0 auto 10px auto;}
+.chkoutbtn{width:95%; margin:20px auto;}
+.pricetxt{clear: both; color:#2997f9; }
+
+.pricetxt .ui-select{float:left; margin:0 10px;} 
+.pricetxt .ui-select .ui-btn{ font-size:14px; /*padding:.3em .5em;*/ height:14px; padding-top:2px; padding-left:5px;}
+.pricetxt .ui-select .ui-btn-icon-right:after{width:12px; height:12px; margin-top: -7px; background-color:inherit;}
+.pricetxt .floatleft{padding-top:5px; }

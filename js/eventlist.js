@@ -140,7 +140,7 @@ function getRestList() {
 		var ticketAmt = 0;
 		var imgURL = serviceURL + "image.php?image=uploads/restaurants/" + restaurant.image +  "&width=100&height=75";
 			$('#restaurantList').append('<li>' +
-					'<a href="restaurantdetails.html?id=' + restaurant.id + '"><img src="' +  imgURL + '"/></a>' +
+					'<a href="restaurantdetails.html?id=' + restaurant.id + '&type=0"><img src="' +  imgURL + '"/></a>' +
 					'<h2>' + restaurant.title + '</h2>' +
 					'<h3>Price : ' + ticketAmt + 'rs </h3>' +
 					//'<h3>Owner : ' + restaurant.owner_name + 'rs </h3>' +
@@ -152,7 +152,7 @@ function getRestList() {
 
 
 function getCakeList() {
-	$.getJSON(serviceURL + 'events/listing/', function(data) {
+	$.getJSON(serviceURL + 'restaurants/listing/1', function(data) {
 		$('#cakeList li').remove();
 		events = data.items;
 		$.each(events, function(index, eventinfo) {
@@ -163,7 +163,7 @@ function getCakeList() {
 		//}
 		var imgURL = serviceURL + "image.php?image=uploads/bakeries/" + event.image +  "&width=100&height=75";
 			$('#cakeList').append('<li>' +
-					'<a href="eventdetails.html?id=' + event.id + '"><img src="' +  imgURL + '"/></a>' +
+					'<a href="restaurantdetails.html?id=' + event.id + '&type=1"><img src="' +  imgURL + '"/></a>' +
 					'<h2>' + event.title + '</h2>' +
 					'<h3>Price : ' + ticketAmt + 'rs </h3>' +
 					//'<h3>Seller : ' + event.seller_or_theater_name + 'rs </h3>' +
@@ -174,7 +174,7 @@ function getCakeList() {
 }
 
 function getFFList() {
-	$.getJSON(serviceURL + 'events/listing/', function(data) {
+	$.getJSON(serviceURL + 'restaurants/listing/2', function(data) {
 		$('#ffList li').remove();
 		events = data.items;
 		$.each(events, function(index, eventinfo) {
@@ -183,9 +183,9 @@ function getFFList() {
 		//if(eventinfo.Ticket[0].amount != undefined && eventinfo.Ticket[0].amount != 'null'){
 			//ticketAmt = eventinfo.Ticket[0].amount;
 		//}
-		var imgURL = serviceURL + "image.php?image=uploads/bakeries/" + event.image +  "&width=100&height=75";
+		var imgURL = serviceURL + "image.php?image=uploads/foods/" + event.image +  "&width=100&height=75";
 			$('#ffList').append('<li>' +
-					'<a href="eventdetails.html?id=' + event.id + '"><img src="' + imgURL + '"/></a>' +
+					'<a href="restaurantdetails.html?id=' + event.id + '&type=2"><img src="' + imgURL + '"/></a>' +
 					'<h2>' + event.title + '</h2>' +
 					'<h3>Price : ' + ticketAmt + 'rs </h3>' +
 					//'<h3>Seller : ' + event.seller_or_theater_name + 'rs </h3>' +
